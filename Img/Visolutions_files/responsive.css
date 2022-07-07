@@ -1,0 +1,14 @@
+@media only screen and (max-width: 767px) {
+  .navbar-nav.ml-auto,
+  .dropdown {
+    background: rgba(0, 0, 0,0.5);
+  }
+
+  .navbar-nav a,
+  .dropdown {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+

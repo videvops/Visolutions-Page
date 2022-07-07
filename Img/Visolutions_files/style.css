@@ -1,0 +1,322 @@
+/* ------------ VARIABLES ------------ */
+:root {
+  --white-color: #fff;
+  --purple-color: #6061A1;
+  --black-color: #000;
+}
+
+
+/* ------------ GENERAL ------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  transition: all 0.5s;
+}
+
+/* ------------ LOADER ------------ */
+.loader {
+  align-items: center;
+  background-image: url(../Img/Bgr-negro-loader.png);
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+}
+
+.loader.show {
+  display: flex;
+}
+
+.loader__icon {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.loader__title {
+  width: 400px;
+  height: 80px;
+}
+
+.loader__circle {
+  background-color: var(--white-color);
+  border-radius: 50%;
+  height: 1rem;
+  margin: 0 5px;
+  width: 1rem;
+  animation-name: toggle-circle;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.loader__circle:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loader__circle:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loader__circle:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes toggle-circle {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* ------------ Header Particles ------------ */
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  /*background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/Img/Header-slider/slider-img1.png);*/
+  background-color: var(--black-color);
+}
+
+#particles-js img {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 500px;
+}
+
+.button-header {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-button {
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  color: var(--white-color);
+  background-color: var(--purple-color);
+  font-weight: bolder;
+  padding: 12px 24px;
+}
+
+/* ------------ NAVBAR ------------ */
+
+.navbar-nav a {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.navbar-dark  {
+  background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6))
+}
+
+.nav-link {
+  color: var(--white-color);
+}
+
+.nav-link:hover {
+  color: var(--black-color);
+  background-color:var(--white-color) ;
+  border-radius: 5px;
+  padding: 0;
+}
+
+
+.navbar-togller {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: .3;
+  background: var(--white-color);
+}
+
+.dropdown-menu.show {
+  background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8))
+}
+
+.dropdown-item {
+  color: var(--white-color);
+}
+
+.w-100 {
+  height: 100vh;
+}
+
+/* ------------ Slider ------------ */
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+
+}
+
+.carousel-caption {
+  bottom: 350px;
+}
+
+.carousel-caption h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.carousel-caption h3 {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.item-img-slider {
+  object-fit: cover;
+}
+
+/* ------------ About Us ------------ */
+
+section {
+  padding: 130px;
+  min-height: 100vh;
+  background: var(--white-color);
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.title h2,
+.textBx-text {
+  position: relative;
+  color: var(--purple-color);
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+.title h2::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background: var(--black-color);
+}
+
+.title.dark h2::before {
+  background: var(--black-color);
+}
+
+
+.aboutUs .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.aboutUs .content .textBx {
+  min-width: 49%;
+  width: 40%;
+  padding: 100px;
+}
+
+.aboutUs .content .textBx p {
+  color: var(--black-color);
+  margin-bottom: 3rem;
+}
+
+.aboutUs .content .imgBx {
+  margin-top: 50px;
+  margin-right: 60px;
+}
+
+.aboutUs .content .imgBx img{
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  max-width: 100%;
+}
+
+/* ------------ Services ------------ */
+
+.services-video {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.services-video h2 {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.services .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.services .content .servicesBx {
+  padding: 40px 40px;
+  max-width: 340px;
+  margin: 40px;
+  transition: 0.5s;
+  text-align: center;
+  background: var(--bg-hablities);
+}
+
+.services .content .servicesBx:hover {
+  background: var(--black-color);
+}
+
+.services .content .servicesBx img {
+  max-width: 80px;
+  transition: 0.5s;
+}
+
+.services .content .servicesBx h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.services .content .servicesBx:hover h2 {
+  color: var(--white-color);
+}
+
+.services .content .servicesBx p {
+  margin: 0;
+  transition: 0.5s;
+}
+
+.services .content .servicesBx:hover p {
+  color: var(--white-color);
+}

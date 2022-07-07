@@ -1,0 +1,284 @@
+/* ------------ VARIABLES ------------ */
+:root {
+  --white-color: #fff;
+  --purple-color: #6061A1;
+  --black-color: #000;
+}
+
+
+/* ------------ GENERAL ------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  transition: all 0.5s;
+}
+
+
+/* ------------ NAVBAR ------------ */
+
+.navbar-nav a {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.navbar-dark  {
+  background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6))
+}
+
+.navbar-brand {
+  width: 400px;
+  height: 80px;
+}
+
+.nav-link {
+  color: var(--white-color);
+}
+
+.nav-link:hover {
+  color: var(--black-color);
+  background-color:var(--white-color) ;
+  border-radius: 5px;
+  padding: 0;
+}
+
+
+.navbar-togller {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: .3;
+  background: var(--white-color);
+}
+
+.dropdown-menu.show {
+  background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8))
+}
+
+.dropdown-item {
+  color: var(--white-color);
+}
+
+.w-100 {
+  height: 100vh;
+}
+
+/* ------------ Header Video ------------ */
+
+.header-video-AboutUs {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  bottom: 100px;
+}
+
+.header-video-AboutUs h1 {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 3rem;
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+}
+
+.container-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* ------------ About Us ------------ */
+
+
+.title {
+  text-align: center;
+}
+
+.title h2,
+.textBx-text {
+  text-align: center;
+  position: relative;
+  color: var(--purple-color);
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+.title h2::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 150px;
+  height: 4px;
+  background: var(--black-color);
+}
+
+.title.dark h2::before {
+  background: var(--black-color);
+}
+
+.aboutUs .content {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px;
+}
+
+.aboutUs .content .textBx {
+  min-width: 49%;
+  width: 40%;
+  padding: 100px;
+}
+
+.aboutUs .content .textBx p {
+  color: var(--black-color);
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.aboutUs .content .imgBx {
+  margin-top: 50px;
+  margin-right: 60px;
+}
+
+.aboutUs .content .imgBx img{
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+
+.button-header {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-button {
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  color: var(--white-color);
+  background-color: var(--purple-color);
+  font-weight: bolder;
+  padding: 12px 24px;
+}
+
+
+
+/* ------------ Footer ------------ */
+.icon-img-footer {
+  width: 30px;
+  height: 30px;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 780px) {
+
+}
+@media only screen and (max-width:480px) {
+  /* ------------ NAVBAR ------------ */
+
+  .navbar-nav{
+    text-align: center;
+  }
+
+  .navbar-brand {
+    width: 180px;
+    height: 35px;
+  }
+
+  .navbar .container {
+    justify-content: space-around;
+  }
+
+  .carousel-caption {
+    bottom: 350px;
+  }
+
+  .carousel-caption h2,
+  .carousel-caption h3 {
+    font-size: 25px;
+  }
+
+  .dropdown-menu.show {
+    background: var(--black-color);
+  }
+
+
+
+  /* ------------ About Us ------------ */
+  section {
+    padding: 0;
+  }
+
+  .title h2 {
+    margin: 50px;
+  }
+
+
+  .aboutUs .content {
+    margin: 0;
+    display: block;
+    transform: translateY(-50%, -50%);
+  }
+
+  .aboutUs .content .textBx {
+    min-width: 100%;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .textBx {
+    text-align: center;
+  }
+
+  .textBx p {
+    padding: 30px;
+    margin: 0;
+  }
+
+  .info-button {
+    font-size: 10px;
+  }
+
+  .aboutUs .content .imgBx {
+    margin: 50px;
+  }
+
+
+
+  /* ------------ Services ------------ */
+  .content-services-ml,
+  .content-services-cloud,
+  .content-services-bd,
+  .content-services-meta,
+  .content-services-industry,
+  .content-services-web {
+    text-align: center;
+    height: 800px;
+  }
+/*
+  .content-servicesbx-title,
+  .content-servicesbx-description {
+    background: rgba(0, 0,0, 0.1);
+  }*/
+
+
+  /* ------------ Contact ------------ */
+
+  section .mb-4 {
+    padding: 20px;
+  }
+
+}

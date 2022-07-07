@@ -1,0 +1,466 @@
+/* ------------ VARIABLES ------------ */
+:root {
+  --white-color: #fff;
+  --purple-color: #6061A1;
+  --black-color: #000;
+}
+
+
+/* ------------ GENERAL ------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  transition: all 0.5s;
+}
+
+/* ------------ LOADER ------------ */
+.loader {
+  align-items: center;
+  background-image: url(/Img/loader/Bgr-negro-loader.png);
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+}
+
+.loader.show {
+  display: flex;
+}
+
+.loader__icon {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.loader__title {
+  width: 400px;
+  height: 80px;
+}
+
+.loader__circle {
+  background-color: var(--white-color);
+  border-radius: 50%;
+  height: 1rem;
+  margin: 0 5px;
+  width: 1rem;
+  animation-name: toggle-circle;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.loader__circle:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loader__circle:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loader__circle:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes toggle-circle {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* ------------ Header Particles ------------ */
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  /*background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/Img/Header-slider/slider-img1.png);*/
+  background-color: var(--black-color);
+}
+
+#particles-js img {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 500px;
+}
+
+.button-header {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-button {
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  color: var(--white-color);
+  background-color: var(--purple-color);
+  font-weight: bolder;
+  padding: 12px 24px;
+}
+
+/* ------------ NAVBAR ------------ */
+
+.navbar-nav a {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.navbar-dark  {
+  background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6))
+}
+
+.navbar-brand {
+  width: 400px;
+  height: 80px;
+}
+
+.nav-link {
+  color: var(--white-color);
+}
+
+.nav-link:hover {
+  color: var(--black-color);
+  background-color:var(--white-color) ;
+  border-radius: 5px;
+  padding: 0;
+}
+
+
+.navbar-togller {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: .3;
+  background: var(--white-color);
+}
+
+.navbar .container {
+  background: var(--black-color);
+}
+
+.dropdown-menu.show {
+  background: var(--black-color);
+}
+
+.dropdown-item {
+  color: var(--white-color);
+}
+
+/* ------------ Slider ------------ */
+
+.w-100 {
+  height: 100vh;
+}
+
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+
+}
+
+.carousel-caption {
+  bottom: 350px;
+}
+
+.carousel-caption h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+}
+
+.carousel-caption h3 {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+}
+
+.item-img-slider {
+  object-fit: cover;
+}
+
+/* ------------ Services ------------ */
+
+.title {
+  text-align: center;
+}
+
+.title h2,
+.textBx-text {
+  text-align: center;
+  position: relative;
+  color: var(--purple-color);
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.title h2::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 150px;
+  height: 4px;
+  background: var(--black-color);
+}
+
+.title.dark h2::before {
+  background: var(--black-color);
+}
+
+/* Services Video */
+.services-video {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.services-video h2 {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Services Machine Learning */
+
+.services {
+  color: var(--white-color);
+  padding: 0;
+  margin-top: 100px;
+}
+
+.content-servicesbx-description {
+  opacity: 0.8;
+  margin: 2em 0;
+}
+
+.bottom-servicesbx {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  padding: 0.6em 3.5em;
+  margin: auto;
+  opacity: 0.8;
+  color: var(--black-color);
+  background: var(--white-color);
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 0.9em;
+  transition: all .25s;
+}
+
+.bottom-servicesbx:hover {
+  background: var(--black-color);
+  color: var(--white-color);
+}
+
+.content-servicesbx-title {
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.content-services-ml {
+  margin-top: 100px;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/servicesHome.jpg);
+}
+
+.content-servicesbx {
+  width: 90%;
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+}
+
+/* Services Cloud */
+
+.content-services-cloud {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/cloud2.jpg);
+}
+
+/* Services Big Data */
+
+.content-services-bd {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/bigdata.jpg);
+}
+
+/* Services Meta */
+
+.content-services-meta {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/metaverse.jpg);
+}
+
+/* Services Industry */
+
+.content-services-industry {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/industry5.jpg);
+}
+
+/* Services web */
+
+.content-services-web {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/web3.jpg);
+  margin-bottom: 50px;
+}
+
+
+
+/* ------------ Footer ------------ */
+.icon-img-footer {
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (min-width:480px) and (max-width: 766px) {
+
+  /* ------------ Nav------------ */
+  .navbar-brand {
+    width: 300px;
+    height: 65px;
+  }
+
+  .carousel-caption h2,
+  .carousel-caption h3 {
+    font-size: 25px;
+  }
+
+  /* ------------ Slider ------------ */
+
+  .content-services-ml,
+  .content-services-cloud,
+  .content-services-bd,
+  .content-services-meta,
+  .content-services-industry,
+  .content-services-web {
+    height: 900px;
+  }
+}
+
+@media only screen and (max-width:480px) {
+
+  /* ------------ LOADER ------------ */
+
+  .loader img {
+    width: 300px;
+    height: 55px;
+  }
+
+
+/* ------------ Header Particles ------------ */
+
+#particles-js {
+  background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/Img/Header-slider/slider-img1.png);
+}
+
+#particles-js img {
+  height: 65px;
+  width: 300px;
+}
+
+
+
+  /* ------------ NAVBAR ------------ */
+
+  .navbar-nav{
+    text-align: center;
+  }
+
+  .navbar-brand {
+    width: 180px;
+    height: 35px;
+  }
+
+  .navbar .container {
+    justify-content: space-around;
+  }
+
+  .carousel-caption {
+    bottom: 300px;
+  }
+
+  .carousel-caption h2,
+  .carousel-caption h3 {
+    font-size: 25px;
+  }
+
+
+  /* ------------ Services ------------ */
+  .content-services-ml,
+  .content-services-cloud,
+  .content-services-bd,
+  .content-services-meta,
+  .content-services-industry,
+  .content-services-web {
+    text-align: center;
+    height: 800px;
+  }
+/*
+  .content-servicesbx-title,
+  .content-servicesbx-description {
+    background: rgba(0, 0,0, 0.1);
+  }*/
+
+
+  /* ------------ Contact ------------ */
+
+  section .mb-4 {
+    padding: 20px;
+  }
+}
+
