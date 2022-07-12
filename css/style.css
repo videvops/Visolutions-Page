@@ -143,12 +143,9 @@
   background: var(--white-color);
 }
 
-.navbar .container {
-  background: var(--black-color);
-}
-
 .dropdown-menu.show {
-  background: var(--black-color);
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
 }
 
 .dropdown-item {
@@ -423,7 +420,7 @@
 
   .navbar-brand {
     width: 180px;
-    height: 35px;
+    height: 40px;
   }
 
   .navbar .container {

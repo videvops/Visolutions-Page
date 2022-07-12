@@ -53,7 +53,8 @@
 }
 
 .dropdown-menu.show {
-  background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8))
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
 }
 
 .dropdown-item {
@@ -74,11 +75,11 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  bottom: 100px;
 }
 
 .header-video-AboutUs h1 {
   color: var(--white-color);
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
   text-align: center;
   font-size: 3rem;
   padding: 20px;
@@ -90,11 +91,180 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
   width: 100%;
+  overflow: hidden;
 }
 
 .container-video video {
-  width: 1500px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  transform: translate(-50%);
+}
+
+/* Services Software Development */
+
+.services {
+  color: var(--white-color);
+  padding: 0;
+}
+
+.content-servicesbx-description {
+  opacity: 0.8;
+  margin: 2em 0;
+}
+
+.bottom-servicesbx {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  padding: 0.6em 3.5em;
+  margin: auto;
+  opacity: 0.8;
+  color: var(--black-color);
+  background: var(--white-color);
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 0.9em;
+  transition: all .25s;
+}
+
+.bottom-servicesbx:hover {
+  background: var(--black-color);
+  color: var(--white-color);
+}
+
+.content-servicesbx-title {
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.content-services-ml {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/softwareD.jpg);
+}
+
+.content-servicesbx {
+  width: 90%;
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+}
+
+/* Services Cloud */
+
+.content-services-cloud {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/cloudComputing.jpg);
+}
+
+/* Services Business Intelligence */
+
+.content-services-businessI {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/bussinesInteligence.jpg);
+}
+
+/* Services Meta */
+
+.content-services-meta {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/metaverses2.jpg);
+}
+
+/* Services Blockchain*/
+
+.content-services-blockchain {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/blockchain.jpg);
+}
+
+/* Services web */
+
+.content-services-web {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/web3S.jpg);
+}
+
+/* Services Artificial Intelligence*/
+
+.content-services-AI {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/ArtificialI.jpg);
+}
+
+/* Services Machine Learning*/
+
+.content-services-machineL {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/machineLearning.jpg);
+}
+
+/* Services Augmented reality*/
+
+.content-services-AR {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/AReality.jpg);
+}
+
+/* Services Industry 5.0*/
+
+.content-services-Industry5 {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/industry-5.jpg);
+}
+
+/* Services Big Data*/
+
+.content-services-bigData {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: center fixed url(/Img/services/bigData2.jpg);
 }
 
 /* ------------ Footer ------------ */
@@ -110,12 +280,20 @@
 
 @media only screen and (max-width:480px) {
 
-  .mb-4 {
-    margin: 30px;
+  /* ------------ NAVBAR ------------ */
+
+  .navbar-nav{
+    text-align: center;
   }
 
-  .btn-contact {
-    margin: 30px;
+  .navbar-brand {
+    width: 180px;
+    height: 40px;
   }
+
+  .navbar .container {
+    justify-content: space-around;
+  }
+
 
 }
