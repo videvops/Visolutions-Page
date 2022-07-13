@@ -53,7 +53,6 @@
 }
 
 .dropdown-menu.show {
-  text-align: center;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
 }
 
@@ -147,7 +146,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/softwareD.jpg);
+  background: center fixed url(../Img/services/softwareD.jpg);
 }
 
 .content-servicesbx {
@@ -165,7 +164,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/cloudComputing.jpg);
+  background: center fixed url(../Img/services/cloudComputing.jpg);
 }
 
 /* Services Business Intelligence */
@@ -176,7 +175,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/bussinesInteligence.jpg);
+  background: center fixed url(../Img/services/bussinesInteligence.jpg);
 }
 
 /* Services Meta */
@@ -187,7 +186,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/metaverses2.jpg);
+  background: center fixed url(../Img/services/metaverses2.jpg);
 }
 
 /* Services Blockchain*/
@@ -198,7 +197,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/blockchain.jpg);
+  background: center fixed url(../Img/services/blockchain.jpg);
 }
 
 /* Services web */
@@ -209,7 +208,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/web3S.jpg);
+  background: center fixed url(../Img/services/web3S.jpg);
 }
 
 /* Services Artificial Intelligence*/
@@ -220,7 +219,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/ArtificialI.jpg);
+  background: center fixed url(../Img/services/ArtificialI.jpg);
 }
 
 /* Services Machine Learning*/
@@ -231,7 +230,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/machineLearning.jpg);
+  background: center fixed url(../Img/services/machineLearning.jpg);
 }
 
 /* Services Augmented reality*/
@@ -242,7 +241,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/AReality.jpg);
+  background: center fixed url(../Img/services/AReality.jpg);
 }
 
 /* Services Industry 5.0*/
@@ -253,7 +252,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/industry-5.jpg);
+  background: center fixed url(../Img/services/industry-5.jpg);
 }
 
 /* Services Big Data*/
@@ -264,7 +263,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/bigData2.jpg);
+  background: center fixed url(../Img/services/bigData2.jpg);
 }
 
 /* ------------ Footer ------------ */
@@ -295,5 +294,7 @@
     justify-content: space-around;
   }
 
-
+  .dropdown-menu.show {
+    text-align: center;
+  }
 }

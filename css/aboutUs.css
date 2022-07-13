@@ -53,7 +53,6 @@
 }
 
 .dropdown-menu.show {
-  text-align: center;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
 }
 
@@ -228,6 +227,7 @@
   }
 
   .dropdown-menu.show {
+    text-align: center;
     background: var(--black-color);
   }
 
@@ -290,12 +290,5 @@
   .content-servicesbx-description {
     background: rgba(0, 0,0, 0.1);
   }*/
-
-
-  /* ------------ Contact ------------ */
-
-  section .mb-4 {
-    padding: 20px;
-  }
 
 }

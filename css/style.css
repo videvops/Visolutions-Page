@@ -18,7 +18,7 @@
 /* ------------ LOADER ------------ */
 .loader {
   align-items: center;
-  background-image: url(/Img/loader/Bgr-negro-loader.png);
+  background-image: url(../Img/loader/Bgr-negro-loader.png);
   display: none;
   flex-direction: column;
   height: 100vh;
@@ -144,7 +144,6 @@
 }
 
 .dropdown-menu.show {
-  text-align: center;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
 }
 
@@ -290,7 +289,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/servicesHome.jpg);
+  background: center fixed url(../Img/services/servicesHome.jpg);
 }
 
 .content-servicesbx {
@@ -308,7 +307,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/cloud2.jpg);
+  background: center fixed url(../Img/services/cloud2.jpg);
 }
 
 /* Services Big Data */
@@ -319,7 +318,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/bigdata.jpg);
+  background: center fixed url(../Img/services/bigdata.jpg);
 }
 
 /* Services Meta */
@@ -330,7 +329,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/metaverse.jpg);
+  background: center fixed url(../Img/services/metaverse.jpg);
 }
 
 /* Services Industry */
@@ -341,7 +340,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/industry5.jpg);
+  background: center fixed url(../Img/services/industry5.jpg);
 }
 
 /* Services web */
@@ -352,7 +351,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background: center fixed url(/Img/services/web3.jpg);
+  background: center fixed url(../Img/services/web3.jpg);
   margin-bottom: 50px;
 }
 
@@ -436,6 +435,10 @@
     font-size: 25px;
   }
 
+  .dropdown-menu.show {
+    text-align: center;
+  }
+
 
   /* ------------ Services ------------ */
   .content-services-ml,
@@ -447,17 +450,15 @@
     text-align: center;
     height: 800px;
   }
-/*
+  /*
   .content-servicesbx-title,
   .content-servicesbx-description {
     background: rgba(0, 0,0, 0.1);
   }*/
 
-
-  /* ------------ Contact ------------ */
-
-  section .mb-4 {
-    padding: 20px;
+  .facebook-img:hover {
+    background-image: url(/Img/icons/facebook-icon.png);
+    z-index: 1;
   }
 }
 
