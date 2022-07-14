@@ -29,9 +29,10 @@
 }
 
 .navbar-brand {
-  width: 400px;
-  height: 80px;
+  width: 350px;
+  height: 65px;
 }
+
 
 .nav-link {
   color: var(--white-color);
@@ -41,7 +42,6 @@
   color: var(--black-color);
   background-color:var(--white-color) ;
   border-radius: 5px;
-  padding: 0;
 }
 
 
@@ -198,8 +198,23 @@
 }
 
 
-@media only screen and (min-width: 480px) and (max-width: 780px) {
+@media only screen and (min-width: 480px) and (max-width: 900px) {
+  .aboutUs .content {
+    margin: 60px;
+    display: block;
+    transform: translateY(-50%, -50%);
+  }
 
+  .aboutUs .content .textBx {
+    min-width: 100%;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .aboutUs .content .imgBx {
+    margin: 50px;
+  }
 }
 @media only screen and (max-width:480px) {
   /* ------------ NAVBAR ------------ */
@@ -273,22 +288,5 @@
     margin: 50px;
   }
 
-
-
-  /* ------------ Services ------------ */
-  .content-services-ml,
-  .content-services-cloud,
-  .content-services-bd,
-  .content-services-meta,
-  .content-services-industry,
-  .content-services-web {
-    text-align: center;
-    height: 800px;
-  }
-/*
-  .content-servicesbx-title,
-  .content-servicesbx-description {
-    background: rgba(0, 0,0, 0.1);
-  }*/
 
 }

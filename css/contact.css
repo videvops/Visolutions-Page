@@ -29,8 +29,8 @@
 }
 
 .navbar-brand {
-  width: 400px;
-  height: 80px;
+  width: 350px;
+  height: 65px;
 }
 
 .nav-link {
@@ -41,7 +41,6 @@
   color: var(--black-color);
   background-color:var(--white-color) ;
   border-radius: 5px;
-  padding: 0;
 }
 
 
