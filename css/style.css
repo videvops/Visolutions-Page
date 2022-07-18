@@ -471,5 +471,8 @@
     background: rgba(0, 0,0, 0.1);
   }*/
 
+  .btn:hover {
+    background-color: #212529;
+  }
 }
 
