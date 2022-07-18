@@ -471,9 +471,5 @@
     background: rgba(0, 0,0, 0.1);
   }*/
 
-  .facebook-img:hover {
-    background-image: url(/Img/icons/facebook-icon.png);
-    z-index: 1;
-  }
 }
 
