@@ -472,7 +472,7 @@
   }*/
 
   .btn:hover {
-    background-color: #212529;
+    background-color: #212529!important;
   }
 }
 
